@@ -51,7 +51,7 @@ def run_hexagon():
         elif 'joke' in command:
             speak(pyjokes.get_joke())
         elif 'search' in command:
-            target = command.replace('search', '')
+            target = command.replace('hexagon search', '')
             speak('Searching for ' + target + '...')
             pywhatkit.search(target)
         elif 'data' in command:
